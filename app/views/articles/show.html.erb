@@ -1,0 +1,13 @@
+<% if alert %>
+  <div class="dialog alert alert-info">
+    <button type="button" class="close" id="alertbtn">×</button>
+    <p><%= alert %></p>
+  </div>
+<% end %>
+
+
+<div class="dialog">
+  <h3><%= @article.title %> - <%= link_to "Edit", edit_article_path %> - <%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Are you sure?"} %></h3>
+  <p><%= @article.content %></p>
+</div>
+

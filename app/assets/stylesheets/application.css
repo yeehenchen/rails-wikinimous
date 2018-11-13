@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+.dialog {
+  text-align: center;
+}
+.body {
+  background-color: #EFEFEF;
+  color: #2E2F30;
+  font-family: arial, sans-serif;
+  margin: 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin: 5px;
+}
+.form {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+.text-deco {
+  color: #4130D2;
+}
+.text-deco:hover {
+  text-decoration: none;
+}

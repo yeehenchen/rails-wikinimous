@@ -1,0 +1,17 @@
+<h1 class="dialog">Edit a new article</h1>
+
+<div class="form">
+  <%= form_for(@article) do |f| %>
+    <div class = "form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, :class => "form-control" %>
+    </div>
+    <div class = "form-group">
+      <%= f.label :content %>
+      <%= f.text_area :content, :class => "form-control" %>
+    </div>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<%= link_to "show", article_path %>
